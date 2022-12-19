@@ -7,9 +7,9 @@ on:
       - "main"
     paths:
       - "src/**"
-  #   一天运行两次
+  #   一天运行3次次
   schedule:
-    - cron: '25 */12 * * *'
+    - cron: '0 0 10,14,16 * * ?'
 
 jobs:
   build:
